@@ -45,7 +45,7 @@
     left: 0; /* Keep it on the left side */
     background-color: #d0e0f0; /* Sidebar background color */
     padding-top: 20px; /* Padding at the top */
-    border-right: 1px solid #ddd; /* Border to separate from main content */
+    border-right: 1px solid black; /* Border to separate from main content */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
@@ -56,7 +56,7 @@
     font-size: 18px;
     color: #333;
     display: block;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid dimgray;
 }
 
 .sidenav a:hover {
