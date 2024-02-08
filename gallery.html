@@ -2,44 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>See My Photo Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<img src="UniversityLogo.png" alt="Logo of The University of Arizona.">
-<span>
-    <a href="index.html">Home Page</a> | <a href="hometown.html">Visit My Home Page</a> |
-    <a href="gallery.html">See My Photo Gallery</a> | <a href="poem.html">Poem</a>
-</span>
-<h1>Red Rocks, Colorado</h1>
+<!-- Header section -->
+<header class="header">
+    <img src="UniversityLogo.png" alt="Logo of The University of Arizona" class="logo">
+    <nav class="navigation">
+        <a href="index.html">Home Page</a>
+        <a href="hometown.html">Visit My Hometown Page</a>
+        <a href="gallery.html">See My Photo Gallery</a>
+        <a href="poem.html">Poem</a>
+    </nav>
+</header>
 
-<table  >
+<!-- Side navigation -->
+<div class="sidenav" id="mySidebar">
+    <a href="index.html">Home Page</a>
+    <a href="hometown.html">Visit My Home Page</a>
+    <a href="gallery.html">See My Photo Gallery</a>
+    <a href="poem.html">Poem</a>
+    <a href="https://www.gravityforms.com/form-templates/contact-form/">Contact Form</a>
+    <a href="https://www.timeanddate.com/calendar/">Calendar</a>
+    <a href="https://www.rogerebert.com/">Article</a>
 
-    <caption> Red Rocks, Colorado  </caption>
+</div>
 
-    <tr>
-        <th>Photo</th>
-        <th>Date</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td><img src="vacation1.jpg" alt="View from the top row;" /></td>
-        <td>Jan 16, 2018</td>
-        <td>View from the top row, sitting area holds 9,525 people</td>
-    </tr>
-    <tr>
-        <td><img src="vacation2.jpg" alt="Facing south from the top of the amphitheater" /></td>
-        <td>Feb 20, 2017</td>
-        <td>Facing south from the top of the amphitheater</td>
-    </tr>
-    <tr>
-        <td><img src="vacation3.jpg" alt="Nearby red rocks sit 6,450 feet (1,970 m) above sea level" /></td>
-        <td>Mar 30, 2019</td>
-        <td>Nearby red rocks sit 6,450 feet (1,970 m) above sea level</td>
-    </tr>
-    <tr>
-        <td colspan="3">Copyright © 2019 Zippy Photographers</td>
-    </tr>
-</table>
+<!-- Main content section -->
+<div class="w3-main">
+    <h1>Red Rocks, Colorado</h1> <br>
+    <table>
+        <caption>Red Rocks, Colorado</caption>
+        <tr>
+            <th>Photo</th>
+            <th>Date</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><img src="vacation1.jpg" alt="View from the top row;" /></td>
+            <td>Jan 16, 2018</td>
+            <td>View from the top row, sitting area holds 9,525 people</td>
+        </tr>
+        <tr>
+            <td><img src="vacation2.jpg" alt="Facing south from the top of the amphitheater" /></td>
+            <td>Feb 20, 2017</td>
+            <td>Facing south from the top of the amphitheater</td>
+        </tr>
+        <tr>
+            <td><img src="vacation3.jpg" alt="Nearby red rocks sit 6,450 feet (1,970 m) above sea level" /></td>
+            <td>Mar 30, 2019</td>
+            <td>Nearby red rocks sit 6,450 feet (1,970 m) above sea level</td>
+        </tr>
+        <tr>
+            <td colspan="3">Copyright © 2019 Zippy Photographers</td>
+        </tr>
+    </table>
+
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementsByClassName("w3-main")[0].style.marginLeft = "200px";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementsByClassName("w3-main")[0].style.marginLeft = "0";
+    }
+</script>
 
 </body>
 </html>

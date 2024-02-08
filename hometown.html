@@ -2,55 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Visit My Hometown</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<img src="UniversityLogo.png" alt="Logo of The University of Arizona.">
-<span>
-    <a href="index.html">Home Page</a> | <a href="hometown.html">Visit My Home Page</a> |
-    <a href="gallery.html">See My Photo Gallery</a> | <a href="poem.html">Poem</a>
-</span>
-<h1>Sometown, USA</h1>
+<!-- Header section -->
+<header class="header">
+    <img src="UniversityLogo.png" alt="Logo of The University of Arizona" class="logo">
+    <nav class="navigation">
+        <a href="index.html">Home Page</a>
+        <a href="hometown.html">Visit My Hometown Page</a>
+        <a href="gallery.html">See My Photo Gallery</a>
+        <a href="poem.html">Poem</a>
+    </nav>
+</header>
 
+<!-- Side navigation -->
+<div class="sidenav" id="mySidebar">
+    <a href="index.html">Home Page</a>
+    <a href="hometown.html">Visit My Home Page</a>
+    <a href="gallery.html">See My Photo Gallery</a>
+    <a href="poem.html">Poem</a>
+    <a href="https://www.gravityforms.com/form-templates/contact-form/">Contact Form</a>
+    <a href="https://www.timeanddate.com/calendar/">Calendar</a>
+    <a href="https://www.rogerebert.com/">Article</a>
 
-<section>
-    <h2>Location</h2>
-    <p>Sometown is located 50 miles west of another town in Somestate.</p>
-</section>
+</div>
 
-
-<section>
-    <h2>About</h2>
-
-
-    <section>
-        <h3>Weather</h3>
-        <p>It's warm all year.</p>
-    </section>
-
-
-    <section>
-        <h3>Population</h3>
-        <p>Around 25,000 people call Sometown home.</p>
-    </section>
-
+<!-- Main content section -->
+<div class="w3-main">
+    <h1>Sometown, USA</h1> <br>
 
     <section>
-        <h3>Sports</h3>
-        <p>Basketball and football are popular sports in Sometown.</p>
+        <h2>Location</h2> <br> <hr>
+        <br> <p>Sometown is located 50 miles west of another town in Somestate.</p> <br>
     </section>
 
-</section>
+    <section>
+         <h2>About</h2> <br> <hr>
+        <section>
+           <br> <h3>Weather</h3> <br>
+            <p>It's warm all year.</p> <br>
+        </section>
 
+        <section>
+            <h3>Population</h3> <br>
+            <p>Around 25,000 people call Sometown home.</p> <br>
+        </section>
 
-<section>
-    <h2>Things To Do</h2>
-    <ul>
-        <li>Fishing</li>
-        <li>Hiking</li>
-        <li>See the sites</li>
-    </ul>
-</section>
+        <section>
+            <h3>Sports</h3> <br>
+            <p>Basketball and football are popular sports in Sometown.</p> <br>
+        </section>
+    </section>
+
+   <br> <section>
+        <h2>Things To Do</h2> <br> <hr>
+    <br> <ul>
+            <li>Fishing</li>
+            <li>Hiking</li>
+            <li>See the sites</li>
+        </ul>
+    </section>
+
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementsByClassName("w3-main")[0].style.marginLeft = "200px";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementsByClassName("w3-main")[0].style.marginLeft = "0";
+    }
+</script>
 
 </body>
 </html>
