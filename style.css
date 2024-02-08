@@ -37,10 +37,9 @@
 
 /* Side navigation styles */
 .sidenav {
-    height: 308px;
+    height: 315px;
     width: 200px; /* Width of sidebar */
     position: absolute;
-    z-index: 1;
     top: 200px;
     left: 0; /* Keep it on the left side */
     background-color: #d0e0f0; /* Sidebar background color */
